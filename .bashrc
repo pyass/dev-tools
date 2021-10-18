@@ -138,4 +138,3 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=vim
 LS_COLORS="$LS_COLORS:di=01;31"; export LS_COLORS
 export TERM="xterm-256color"
-eval "$(direnv hook bash)"
