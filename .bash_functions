@@ -44,3 +44,12 @@ tunnel() {
 
     ssh -N -L localhost:$port:localhost:$port $host
 }
+
+install() {
+    prog=$1
+    if [[ $USER != "root" ]]; then
+        sudo ln -s $prog /usr/local/bin/
+    else
+        ln -s $prog /usr/local/bin/
+    fi
+}
